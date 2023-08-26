@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home | Video Comparison</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{ url_for('static', filename='css/style.css') }}"
+        />
+        <link
+            rel="icon"
+            sizes="180x180"
+            href="{{ url_for('static', filename='images/favicon.png') }}"
+        />
+    </head>
+    <body>
+        <main>
+            <h1>Video Analyzer</h1>
+            <p>
+                This is web app will compare and analyze two videos and
+                determines the similarity score between them.
+                <br />
+                <br />
+                <em>
+                    (<strong>Note:</strong> The videos must be in the same
+                    format. Though the processing will take some time, it will
+                    be work little faster if
+                    <strong
+                        >Video length is less then or equal to 45 seconds and
+                        less then or equal to 15 MB in size.</strong
+                    >
+                    Larger videos will take more time and sometimes it will not
+                    work.)
+                </em>
+            </p>
+            <h2>Upload Videos</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <label for="video1">Video 1:</label>
+                <input type="file" name="video1" id="video1" /><br />
+
+                <label for="video2">Video 2:</label>
+                <input type="file" name="video2" id="video2" /><br />
+
+                <input class="btn" type="submit" value="Compare" />
+            </form>
+        </main>
+    </body>
+</html>

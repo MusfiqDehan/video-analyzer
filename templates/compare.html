@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compare | Video Analyzer</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{ url_for('static', filename='css/style.css') }}"
+        />
+        <link
+            rel="icon"
+            sizes="180x180"
+            href="{{ url_for('static', filename='images/favicon.png') }}"
+        />
+    </head>
+    <body>
+        <h1>Video Analyzer</h1>
+        <div class="videos-container">
+            <video
+                src="{{ url_for('static', filename='uploads/' + video1) }}"
+                controls
+            ></video>
+            <video
+                src="{{ url_for('static', filename='uploads/' + video2) }}"
+                controls
+            ></video>
+        </div>
+
+        {% if similarity_percentage %}
+        <h2>Similarity Score: {{ similarity_percentage }}</h2>
+        {% endif %}
+
+        <a class="btn" href="{{ url_for('home') }}">Analyze New Videos</a>
+    </body>
+</html>

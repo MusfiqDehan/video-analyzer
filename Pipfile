@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+opencv-python = "*"
+numpy = "*"
+pytube = "*"
+scipy = "*"
+scikit-image = "*"
+librosa = "*"
+moviepy = "*"
+python-speech-features = "*"
+pyaudioanalysis = "*"
+flask = "*"
+hmmlearn = "*"
+eyed3 = "*"
+pydub = "*"
+matplotlib = "*"
+imblearn = "*"
+plotly = "*"
+gunicorn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
