@@ -25,6 +25,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.ERROR)
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), 'static/uploads')
 
 
 @app.route('/', methods=['GET', 'POST'])
