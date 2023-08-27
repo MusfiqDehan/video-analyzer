@@ -1,3 +1,9 @@
-# Video Analyzer
+<div align="center">
 
-This is web app will compare and analyze two videos and determines the similarity score between them.
+<img src="static/images/favicon.png">
+
+<h1> Video Analyzer </h1>
+
+<p> This is web app will compare and analyze two videos and determines the similarity score between them.</p>
+
+</div>
