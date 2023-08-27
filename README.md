@@ -10,8 +10,8 @@
 
 <table>
     <tr>
-        <td> <img src="static/images/uploader.png" alt="1" width = 360px height = 640px ></td>
-        <td> <img src="static/images/analyzer.png" alt="2" width = 360px height = 640px ></td>
+        <td> <img src="static/images/uploader.png"></td>
+        <td> <img src="static/images/analyzer.png"></td>
     </tr>
 </table>
 
